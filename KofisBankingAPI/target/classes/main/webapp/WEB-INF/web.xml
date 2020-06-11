@@ -20,4 +20,15 @@
   	<url-pattern>/login</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  <servlet-name>CreateUserServlet</servlet-name>
+  	<servlet-class>banking.main.servlets.CreateUserServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CreateUserServlet</servlet-name>
+  	<url-pattern>/addUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  
 </web-app>
