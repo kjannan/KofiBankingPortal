@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+	header, body, td {
+		background-color: black;
+		color: #CCA21F
+		}
+	
+</style>
+<title>Deposits Withdrawals</title>
+</head>
+<body>
+	<h1>Deposit or Withdrawal Form</h1>
+	<form method="post" action="depositWithdrawalServlet" id="dwform">
+			<table>
+				<tbody>
+				<tr>
+					<td>Amount: </td>
+					<td><input type="number" name="amount"></td>
+				</tr>
+				<tr>
+					<td>Account Number: </td>
+					<td><input type="number" name="account"></td>
+				</tr>
+				
+				<tr>
+					<td><input type="submit" name="submit"></td>
+				</tr>
+				
+			</tbody></table>
+			<label for="dw">Choose Deposit/WithDrawal:</label>
+			<select id="dw" name="dw" form="dwform">
+			  <option value="deposit">Deposit</option>
+			  <option value="withdrawal">Withdrawal</option>
+			</select>
+		</form>
+</body>
+</html>
