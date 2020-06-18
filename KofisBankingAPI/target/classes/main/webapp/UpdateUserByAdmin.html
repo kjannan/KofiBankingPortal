@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+	header, body, td {
+		background-color: black;
+		color: #CCA21F
+		}
+	
+</style>
+<title>Update User Page</title>
+</head>
+<body>
+	<h1>Change User Information by UserId</h1>
+	<form method="post" action="updateUserServlet" id="updateFormById">
+			<table>
+				<tbody>
+				<tr>
+					<td>User ID: </td>
+					<td><input type="number" name="userId"></td>
+				</tr>
+				<tr>
+					<td>First Name: </td>
+					<td><input type="text" name="firstname"></td>
+				</tr>
+				<tr>
+					<td>Last Name: </td>
+					<td><input type="text" name="lastname"></td>
+				</tr>
+				<tr>
+					<td>Email: </td>
+					<td><input type="text" name="email"></td>
+				</tr>
+				<tr>
+					<td>Username: </td>
+					<td><input type="text" name="username"></td>
+				</tr>
+				<tr>
+					<td>Password: </td>
+					<td><input type="password" name="password"></td>
+				</tr>
+				<tr>
+					<td><input type="submit" name="submit"></td>
+				</tr>
+			</tbody></table>
+		</form>
+</body>
+</html>

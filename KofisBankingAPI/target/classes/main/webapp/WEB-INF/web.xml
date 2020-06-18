@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>KofisBankingAPI</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+    <servlet>
+  <servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>banking.main.servlets.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <servlet-class>banking.main.servlets.UpdateUserServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>UpdateUserServlet</servlet-name>
+    <url-pattern>/updateUserServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>CreateUserServlet</servlet-name>
+  	<servlet-class>banking.main.servlets.CreateUserServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>CreateUserServlet</servlet-name>
+  	<url-pattern>/addUserServlet</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  <servlet-name>OpenAccountServlet</servlet-name>
+  	<servlet-class>banking.main.servlets.OpenAccountServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>OpenAccountServlet</servlet-name>
+  	<url-pattern>/openAccountServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ReadUserServlet</servlet-name>
+    <servlet-class>banking.main.servlets.ReadUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReadUserServlet</servlet-name>
+    <url-pattern>/ReadUserServlet</url-pattern>
+  </servlet-mapping>
+ 
+   <servlet>
+    <servlet-name>AccountInfoServlet</servlet-name>
+    <servlet-class>banking.main.servlets.AccountInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccountInfoServlet</servlet-name>
+    <url-pattern>/accountInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <servlet-name>DepositWithdrawalServlet</servlet-name>
+    <servlet-class>banking.main.servlets.DepositWithdrawalServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DepositWithdrawalServlet</servlet-name>
+    <url-pattern>/depositWithdrawalServlet</url-pattern>
+  </servlet-mapping>
+ 
+ 
+</web-app>
